@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: grey;
+    background-image: url(531249.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.pd-top {
+    padding-top: 6vh;
+}
+#screenshot {
+    position: absolute;
+    top: 15vh;
+    left: 47vw;
+    display: none;
+    width:30vw;
+    height: 54.8vh;
+}
+#close{
+    display: inline-block;
+    margin-left: 25vw;
+    width: 30px;
+    height: 30px;
+    background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
+    
+    -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+}
+
+#container {
+    margin: 10vh auto;
+    width: 92vw;
+}
+video {
+    border: double 5px transparent;
+    background-image: linear-gradient(white,white), linear-gradient(to right, grey, black);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+}
+video#recorded {
+    height: 45vh;
+    display: none;
+    margin-left: 4vw;
+}
+video#gum {
+    height: 45vh;
+    opacity: 0;
+}
+button {
+    margin-left: 2vw;
+    font-weight: bold;
+    font-size: 12px;
+    width: 8vw;
+    height: 4.5vh;
+    border-radius: .5em;
+    background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+      -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+      -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+      
+      linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+      hsl(0,0%,90%) 47%, 
+      hsl(0,0%,78%) 53%,
+      hsl(0,0%,70%)100%);
+}
+button:active {
+    color: hsl(210, 100%, 40%);
+    text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+    box-shadow: 
+      inset hsla(210,100%,30%,  1) 0  0px 0px 4px, /* border */
+      inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
+      inset hsla(210,100%,20%,.25) 0 -1px 0px 7px, /* bottom SD */
+      inset hsla(210,100%,100%,.7) 0  2px 1px 7px, /* top HL */
+      
+      hsla(210,100%,75%, .8) 0  0px 3px 2px, /* outer SD */
+      hsla(210,50%,40%, .25) 0 -5px 6px 4px, /* outer SD */
+      hsla(210,80%,95%,   1) 0  5px 6px 4px; /* outer HL */
+  }
+canvas {
+
+}
+.none {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.blur {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.grayscale {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.invert {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.sepia {
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+}
